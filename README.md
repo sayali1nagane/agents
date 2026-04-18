@@ -45,6 +45,7 @@ Copy `.env.example` to `.env` and fill in the required values:
 |----------|-------------|
 | `POLYMARKET_API_KEY` | Your Polymarket API key |
 | `PRIVATE_KEY` | Wallet private key for signing transactions |
+| `DRY_RUN` | Set to `true` to simulate trades without executing them (recommended for testing) |
 
 ## Usage
 
