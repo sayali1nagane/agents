@@ -56,6 +56,8 @@ Copy `.env.example` to `.env` and fill in the required values:
 
 > **Personal note:** I added a `SLEEP_INTERVAL` env var (in seconds) to control how frequently the agent polls for new opportunities. I run it at `60` locally to avoid hammering the API during development. Bumped it to `120` recently after noticing my logs filling up fast even with nothing interesting happening.
 
+> **Personal note:** Added a `MIN_LIQUIDITY` env var to skip markets below a certain liquidity threshold — I set mine to `500` (USDC) to avoid getting stuck in thinly traded markets where spreads are terrible.
+
 ## Usage
 
 ```bash
