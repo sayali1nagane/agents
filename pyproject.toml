@@ -74,4 +74,5 @@ testpaths = ["tests"]
 asyncio_mode = "auto"
 # Removed --cov flags so quick local test runs don't require coverage overhead
 # -s shows print() output during tests, useful for debugging agent responses
-addopts = "-v -s"
+# --tb=short keeps tracebacks readable without being overwhelming
+addopts = "-v -s --tb=short"
