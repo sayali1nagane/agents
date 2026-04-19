@@ -53,6 +53,8 @@ Copy `.env.example` to `.env` and fill in the required values:
 
 > **Personal note:** I also set `MAX_POSITION_SIZE=10` while I'm still learning the codebase — tighter than the default `25` just to be safe during early testing.
 
+> **Personal note:** I added a `SLEEP_INTERVAL` env var (in seconds) to control how frequently the agent polls for new opportunities. I run it at `60` locally to avoid hammering the API during development.
+
 ## Usage
 
 ```bash
