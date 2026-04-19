@@ -47,6 +47,7 @@ Copy `.env.example` to `.env` and fill in the required values:
 | `PRIVATE_KEY` | Wallet private key for signing transactions |
 | `DRY_RUN` | Set to `true` to simulate trades without executing them (recommended for testing) |
 | `LOG_LEVEL` | Logging verbosity — I use `DEBUG` locally to see full request/response details |
+| `MAX_POSITION_SIZE` | Maximum USDC size per position — I set this to `50` as a personal safety cap |
 
 > **Personal note:** I keep `DRY_RUN=true` by default in my `.env` so I never accidentally execute real trades while experimenting.
 
