@@ -48,12 +48,13 @@ Copy `.env.example` to `.env` and fill in the required values:
 | `DRY_RUN` | Set to `true` to simulate trades without executing them (recommended for testing) |
 | `LOG_LEVEL` | Logging verbosity — I use `DEBUG` locally to see full request/response details |
 | `MAX_POSITION_SIZE` | Maximum USDC size per position — I set this to `25` as a personal safety cap |
+| `SLEEP_INTERVAL` | Polling interval in seconds — see note below |
 
 > **Personal note:** I keep `DRY_RUN=true` by default in my `.env` so I never accidentally execute real trades while experimenting.
 
 > **Personal note:** I also set `MAX_POSITION_SIZE=10` while I'm still learning the codebase — tighter than the default `25` just to be safe during early testing.
 
-> **Personal note:** I added a `SLEEP_INTERVAL` env var (in seconds) to control how frequently the agent polls for new opportunities. I run it at `60` locally to avoid hammering the API during development.
+> **Personal note:** I added a `SLEEP_INTERVAL` env var (in seconds) to control how frequently the agent polls for new opportunities. I run it at `60` locally to avoid hammering the API during development. Bumped it to `120` recently after noticing my logs filling up fast even with nothing interesting happening.
 
 ## Usage
 
