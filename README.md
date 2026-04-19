@@ -51,6 +51,8 @@ Copy `.env.example` to `.env` and fill in the required values:
 
 > **Personal note:** I keep `DRY_RUN=true` by default in my `.env` so I never accidentally execute real trades while experimenting.
 
+> **Personal note:** I also set `MAX_POSITION_SIZE=10` while I'm still learning the codebase — tighter than the default `25` just to be safe during early testing.
+
 ## Usage
 
 ```bash
